@@ -28,4 +28,7 @@ module.exports = (value) => {
     } else {
         return typeof value;
     }
+
+    template = `this is a template string
+    . please check with customer`;
 };
