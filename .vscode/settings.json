@@ -12,5 +12,7 @@
             ],
             "url": "./training.config.schema.json"
         }
-    ]
+    ],
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16
 }
