@@ -12,12 +12,7 @@ const f = function () {
 
 */
 
-
-function method() {
-    return this.value;
-};
-
-module.exports = (method, value = "") => {
+module.exports = (method, value = '') => {
     this.value = value;
     return method.bind(this);
 };

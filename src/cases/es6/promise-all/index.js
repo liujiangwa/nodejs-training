@@ -10,7 +10,6 @@ cb是回调函数, 请将结果(数组)(按照顺序)作为第一个参数传入
 
 module.exports = (method, stringArray, callback) => {
     let promiseVector = [];
-    let resultVector = [];
     stringArray.forEach(element => {
         promiseVector.push(method(element));
     });
