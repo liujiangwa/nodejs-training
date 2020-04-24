@@ -19,6 +19,6 @@ module.exports = async () => {
     let apiFolder = path.join(__dirname, '../../', 'core-api');
     const folders = await fs.readdir(apiFolder);
     return folders.map(folder => {
-        return path.join(apiFolder, folder);
+        return require(path.join(apiFolder, folder));
     });
 };
